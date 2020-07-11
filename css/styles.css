@@ -52,7 +52,8 @@ body {
 .header,
 .hero,
 .advantages,
-.activities {
+.activities,
+.team {
   background-color: tomato;
   margin-left: auto;
   margin-right: auto;
@@ -221,7 +222,9 @@ body {
   width: 270px;
 }
 
-.advantages-list-item:not(:last-child) {
+.advantages-list-item:not(:last-child),
+.team-list-item:not(:last-child),
+.activities-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -229,17 +232,14 @@ body {
   line-height: 1.71;
 }
 
-.activities > .container {
-  padding-top: 47px;
-  padding-bottom: 47px;
+.activities > .container,
+.team > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .activities-list {
   display: flex;
-}
-
-.activities-list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .activities-title,
@@ -264,6 +264,10 @@ body {
   background-color: aqua;
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-list-name {
   font-weight: 500;
   font-size: 16px;
@@ -271,6 +275,9 @@ body {
   /* identical to box height */
   text-align: center;
   color: var(--title-color);
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-list-item-descr {
@@ -279,6 +286,17 @@ body {
   /* identical to box height */
   text-align: center;
   color: var(--main-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-list-item: {
 }
 
 .adress-descr {
