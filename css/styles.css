@@ -46,22 +46,31 @@ body {
 .list {
   list-style: none;
   padding: 0px;
+  margin: 0px;
 }
 
 .header,
-.hero {
-  display: flex;
+.hero,
+.advantages,
+.activities {
   background-color: tomato;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container {
-  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.header > .container {
+  display: flex;
   align-items: center;
+}
+
+.hero > .container {
+  text-align: center;
 }
 
 .logo {
@@ -190,16 +199,47 @@ body {
 .hero-button:focus {
   background-color: #188ce8;
 }
+.advantages > .container {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
 
 .advantages-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list-item {
+  width: 270px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-description {
   line-height: 1.71;
+}
+
+.activities > .container {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
+.activities-list {
+  display: flex;
+}
+
+.activities-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .activities-title,
@@ -210,6 +250,9 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--title-color);
+
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .activities-descr {
