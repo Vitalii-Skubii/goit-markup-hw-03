@@ -54,7 +54,8 @@ body {
 .advantages,
 .activities,
 .team,
-.clients {
+.clients,
+.footer {
   background-color: tomato;
   margin-left: auto;
   margin-right: auto;
@@ -140,13 +141,18 @@ body {
   color: var(--main-text-color);
 }
 
+.adress-link-header:not(:last-child) {
+  margin-right: 30px;
+}
+
 .adress-link-header:hover,
 .adress-link-header:focus {
   color: var(--accent-color);
 }
 
 .adress-link-footer {
-  line-height: 1, 71;
+  display: block;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   background-color: aqua;
 }
@@ -308,6 +314,14 @@ body {
 .clients-list {
   display: flex;
   justify-content: space-between;
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.footer-social-list {
+  display: flex;
 }
 
 .adress-descr {
