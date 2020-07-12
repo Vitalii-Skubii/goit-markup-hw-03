@@ -53,7 +53,8 @@ body {
 .hero,
 .advantages,
 .activities,
-.team {
+.team,
+.clients {
   background-color: tomato;
   margin-left: auto;
   margin-right: auto;
@@ -233,7 +234,8 @@ body {
 }
 
 .activities > .container,
-.team > .container {
+.team > .container,
+.clients > .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -297,6 +299,15 @@ body {
 }
 
 .social-list-item: {
+}
+
+.clients-title {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .adress-descr {
