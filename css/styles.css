@@ -49,7 +49,6 @@ body {
   margin: 0px;
 }
 
-.header,
 .hero,
 .advantages,
 .activities,
@@ -58,14 +57,18 @@ body {
 .footer,
 .gallery {
   background-color: tomato;
-  margin-left: auto;
-  margin-right: auto;
 }
+
+/* .header {
+  height: 80px;
+} */
 
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header > .container {
@@ -140,6 +143,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .adress-link-header:not(:last-child) {
@@ -319,10 +325,17 @@ body {
 
 .footer > .container {
   display: flex;
+  /*  */
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-social-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .adress-descr {
