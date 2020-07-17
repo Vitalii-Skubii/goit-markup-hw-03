@@ -230,7 +230,7 @@ body {
   color: var(--title-color);
 
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .advantages-list {
   display: flex;
@@ -238,6 +238,10 @@ body {
 
 .advantages-list-item {
   width: 270px;
+}
+
+.advantages-list-img {
+  margin-bottom: 30px;
 }
 
 .advantages-list-item:not(:last-child),
@@ -248,13 +252,22 @@ body {
 
 .advantages-description {
   line-height: 1.71;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.activities > .container,
-.team > .container,
-.clients > .container {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.advantages.section {
+  padding-bottom: 47px;
+}
+
+.activities.section {
+  padding-top: 47px;
 }
 
 .activities-list {
