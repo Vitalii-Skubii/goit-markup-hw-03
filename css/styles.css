@@ -96,7 +96,6 @@ body {
 .logo.white {
   /* identical to box height */
   color: #ffffff;
-  background-color: aqua;
 
   margin-bottom: 20px;
 }
@@ -165,7 +164,6 @@ body {
   display: block;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  background-color: aqua;
 }
 .adress-link-footer:hover,
 .adress-link-footer:focus {
@@ -296,6 +294,13 @@ body {
   background-color: aqua;
 }
 
+.team-list-item {
+  width: 270px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-list {
   display: flex;
 }
@@ -330,6 +335,8 @@ body {
 .social-list {
   display: flex;
   justify-content: space-around;
+
+  margin-bottom: 24px;
 }
 
 .social-list-item: {
@@ -350,6 +357,8 @@ body {
 }
 
 .footer {
+  background-color: #2f303a;
+
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -362,9 +371,9 @@ body {
   margin-bottom: 9px;
 }
 
-.footer-social {
-  background-color: aqua;
-}
+/* .footer-social {
+ 
+} */
 
 .footer-social-list {
   display: flex;
@@ -376,7 +385,6 @@ body {
   line-height: 1.71;
   /* or 171% */
   color: var(--dark-theme-text-color);
-  background-color: aqua;
 
   margin-top: 0;
   margin-bottom: 9;
@@ -387,7 +395,6 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--dark-theme-text-color);
-  background-color: aqua;
 }
 
 .gallery > .container {
@@ -447,8 +454,25 @@ body {
   margin-bottom: 0;
 }
 
+.projects-list-item:hover,
+.projects-list-item:focus {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .projects-list-img {
-  margin-bottom: 20px;
+  display: block;
+}
+
+.projects-list-card {
+  width: 370px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+
+  padding: 20px 24px;
 }
 
 .projects-list-title {
